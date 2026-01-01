@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PT Sun Menara Mandiri Group - Holding Company Terpercaya</title>
-    
+    <title>Struktur Grup - PT Sun Menara Mandiri Group</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -217,174 +217,75 @@
             margin-bottom: 30px;
         }
 
-        .btn-lg {
-            padding: 15px 40px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
+        /* Org Chart */
+        .org-chart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
         }
 
-        .btn-outline-light.btn-lg {
-            background: rgba(255, 255, 255, 0.1);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+        .org-level {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
         }
 
-        .btn-outline-light.btn-lg:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-warning.btn-lg {
-            background: linear-gradient(45deg, rgba(255, 193, 7, 0.8), rgba(255, 87, 34, 0.8));
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-        }
-
-        .btn-warning.btn-lg:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-        }
-
-        /* Feature Cards */
-        .feature-card {
+        .org-node {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(15px);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            padding: 30px 25px;
+            border-radius: 15px;
+            padding: 25px 20px;
             text-align: center;
             transition: all 0.3s ease;
-            height: 100%;
+            min-width: 200px;
             color: white;
         }
 
-        .feature-card:hover {
-            transform: translateY(-10px);
+        .org-node.holding-company {
+            background: linear-gradient(135deg, rgba(0, 123, 255, 0.3), rgba(138, 43, 226, 0.3));
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 15px 35px rgba(0, 123, 255, 0.3);
+        }
+
+        .org-node:hover {
+            transform: translateY(-5px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             background: rgba(255, 255, 255, 0.15);
         }
 
-        .feature-card h4 {
-            color: white;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .feature-card p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
-        }
-
-        /* Property Cards */
-        .property-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            height: 100%;
-            color: white;
-        }
-
-        .property-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-            background: rgba(255, 255, 255, 0.15);
-        }
-
-        .property-img {
-            height: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(0, 123, 255, 0.2);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .property-card h5 {
+        .org-node h5 {
             color: white;
             font-weight: 600;
             margin-bottom: 10px;
+            font-size: 1.1rem;
         }
 
-        .property-card p {
+        .org-node p {
             color: rgba(255, 255, 255, 0.8);
-            line-height: 1.6;
+            font-size: 0.9rem;
+            line-height: 1.4;
         }
 
-        /* Company Profile Card */
-        .company-profile-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            padding: 40px 30px;
-            color: white;
-        }
-
-        .company-profile-card h3 {
-            color: white;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-
-        .company-profile-card p {
-            color: rgba(255, 255, 255, 0.8);
-            line-height: 1.8;
-            margin-bottom: 15px;
-        }
-
-        /* Employee Table Card */
-        .table-responsive .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow:
-                0 25px 50px rgba(0, 0, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        .org-connector {
+            width: 2px;
+            height: 30px;
+            background: rgba(255, 255, 255, 0.3);
             position: relative;
-            animation: glassMorph 8s ease-in-out infinite;
         }
 
-        .card-header {
-            background: linear-gradient(135deg, rgba(0, 123, 255, 0.3), rgba(138, 43, 226, 0.3)) !important;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            color: white !important;
-            backdrop-filter: blur(10px);
-        }
-
-        .table {
-            color: white;
-            margin-bottom: 0;
-        }
-
-        .table thead th {
-            background: rgba(0, 123, 255, 0.2) !important;
-            border-color: rgba(255, 255, 255, 0.1) !important;
-            color: white !important;
-            backdrop-filter: blur(5px);
-        }
-
-        .table tbody tr {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .table tbody tr:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: scale(1.01);
-        }
-
-        .table tbody td {
-            color: rgba(255, 255, 255, 0.9);
-            border-color: rgba(255, 255, 255, 0.1);
-            padding: 12px 15px;
+        .org-connector::before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: -4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
         }
 
         /* Animations */
@@ -416,6 +317,15 @@
             .glass-card {
                 padding: 20px;
             }
+
+            .org-level {
+                gap: 20px;
+            }
+
+            .org-node {
+                min-width: 150px;
+                padding: 20px 15px;
+            }
         }
     </style>
 </head>
@@ -431,7 +341,7 @@
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <img src="img/ptsun.png" alt="Logo Perusahaan" class="logo-top-bar me-2" style="height:32px;">
-                <span class="fw-bold">PT Sun Menara Mandiri Group</span>
+                <span class="fw-bold">PT Sun Menara Mandiri</span>
             </a>
 
             <div class="d-flex gap-2">
@@ -447,82 +357,100 @@
     </nav>
 
     <div class="container mt-5">
-        
         <div class="jumbotron text-center">
-            <h1 style="--i: 0; animation: fadeInUp 1s ease-out 0.2s both;">PT Sun Menara Mandiri Group</h1>
-            <p class="lead" style="--i: 0; animation: fadeInUp 1s ease-out 0.4s both;">Holding company terkemuka yang mengintegrasikan solusi keuangan terpercaya dan pengembangan properti berkelanjutan melalui PT Sun Menara Mandiri dan anak perusahaan PT TIGA BINTANG MAHAWIRA.</p>
-
-            <div class="mt-4 d-flex justify-content-center gap-3" style="--i: 0; animation: fadeInUp 1s ease-out 0.6s both;">
-                <a href="group-structure.html" class="btn btn-outline-light btn-lg">Struktur Grup</a>
-                <a href="business-portfolio.html" class="btn btn-warning btn-lg">Portofolio Bisnis</a>
-            </div>
+            <h1 style="--i: 0; animation: fadeInUp 1s ease-out 0.2s both;">Struktur Grup</h1>
+            <p class="lead" style="--i: 0; animation: fadeInUp 1s ease-out 0.4s both;">Struktur korporasi PT Sun Menara Mandiri Group yang menunjukkan hubungan antara holding company dan anak perusahaan.</p>
         </div>
 
-        <h2 class="text-center mb-4 text-primary-bank" style="--i: 1; animation: fadeInUp 1s ease-out 0.6s both;">Layanan Keuangan</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="feature-card" style="--i: 2;">
-                    <h4>Transfer SWIFT/MT</h4>
-                    <p>Memproses transfer valuta asing dengan cepat dan aman melalui jaringan SWIFT global.</p>
+        <!-- Organizational Chart -->
+        <div class="org-chart" style="--i: 1; animation: fadeInUp 1s ease-out 0.6s both;">
+            <!-- Holding Company Level -->
+            <div class="org-level">
+                <div class="org-node holding-company">
+                    <h5>PT Sun Menara Mandiri Group</h5>
+                    <p>Holding Company<br>Layanan Keuangan & Properti</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="feature-card" style="--i: 3;">
-                    <h4>e-Statement Digital</h4>
-                    <p>Akses dan unduh laporan rekening elektronik Anda kapan saja, di mana saja.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="feature-card" style="--i: 4;">
-                    <h4>Keamanan Multi-Faktor</h4>
-                    <p>Keamanan tingkat tinggi dengan otentikasi multi-faktor dan enkripsi data end-to-end.</p>
-                </div>
-            </div>
-        </div>
 
-        <h2 class="text-center mb-4 text-primary-bank mt-5" style="--i: 5; animation: fadeInUp 1s ease-out 1.2s both;">Pengembangan Properti</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="property-card" style="--i: 6;">
-                    <div class="property-img">
-                        <i class="fas fa-building fa-3x"></i>
-                    </div>
-                    <div class="p-3">
-                        <h5>Pusat Perbelanjaan</h5>
-                        <p>Kompleks perbelanjaan modern dengan tenant berkualitas dan fasilitas lengkap.</p>
-                    </div>
+            <!-- Connector -->
+            <div class="org-connector"></div>
+
+            <!-- Subsidiary Level -->
+            <div class="org-level">
+                <div class="org-node">
+                    <h5>PT Sun Menara Mandiri</h5>
+                    <p>Unit Bisnis Utama<br>Layanan Perbankan & Properti</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="property-card" style="--i: 7;">
-                    <div class="property-img">
-                        <i class="fas fa-home fa-3x"></i>
-                    </div>
-                    <div class="p-3">
-                        <h5>Perumahan Elite</h5>
-                        <p>Perumahan premium dengan desain modern dan lokasi strategis di pusat kota.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="property-card" style="--i: 8;">
-                    <div class="property-img">
-                        <i class="fas fa-city fa-3x"></i>
-                    </div>
-                    <div class="p-3">
-                        <h5>Gedung Perkantoran</h5>
-                        <p>Gedung perkantoran kelas A dengan fasilitas lengkap dan akses transportasi mudah.</p>
-                    </div>
+                <div class="org-node">
+                    <h5>PT TIGA BINTANG MAHAWIRA</h5>
+                    <p>Anak Perusahaan<br>Bisnis & Investasi Strategis</p>
                 </div>
             </div>
         </div>
 
-        <div class="card-content mt-5 company-profile-card" style="--i: 9; animation: fadeInUp 1s ease-out 1.4s both;">
-            <h3 class="text-primary-bank">Tentang PT Sun Menara Mandiri</h3>
-            <p>Didirikan pada tahun 1998, PT Sun Menara Mandiri adalah perusahaan terkemuka yang bergerak di bidang keuangan dan properti. Melalui anak perusahaan Pt Sun Menara Mandiri, kami menyediakan layanan perbankan digital inovatif, sementara divisi properti kami fokus pada pengembangan proyek-proyek strategis yang memberikan nilai tambah bagi masyarakat dan investor.</p>
-            <p>Visi kami adalah menjadi pemimpin terdepan dalam solusi keuangan terintegrasi dan pengembangan properti berkelanjutan di Asia Tenggara.</p>
+        <!-- Structure Explanation -->
+        <div class="glass-card" style="--i: 2; animation: fadeInUp 1s ease-out 1.2s both;">
+            <h3 class="text-center mb-4 text-primary-bank">Penjelasan Struktur</h3>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>PT Sun Menara Mandiri Group (Holding Company)</h5>
+                    <p>Sebagai holding company, PT Sun Menara Mandiri Group bertanggung jawab atas:</p>
+                    <ul class="text-light">
+                        <li>Strategi korporasi keseluruhan</li>
+                        <li>Pengelolaan portofolio investasi</li>
+                        <li>Supervisi anak perusahaan</li>
+                        <li>Pengembangan bisnis strategis</li>
+                        <li>Governance dan compliance</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h5>Anak Perusahaan</h5>
+                    <p>Struktur anak perusahaan memungkinkan spesialisasi dan fokus pada bidang bisnis masing-masing:</p>
+                    <ul class="text-light">
+                        <li><strong>PT Sun Menara Mandiri:</strong> Layanan keuangan dan properti</li>
+                        <li><strong>PT TIGA BINTANG MAHAWIRA:</strong> Bisnis dan investasi strategis</li>
+                    </ul>
+                    <p class="mt-3">Model ini memungkinkan pertumbuhan yang lebih efisien dan diversifikasi risiko.</p>
+                </div>
+            </div>
         </div>
 
+        <!-- Benefits of Structure -->
+        <div class="glass-card" style="--i: 3; animation: fadeInUp 1s ease-out 1.4s both;">
+            <h3 class="text-center mb-4 text-primary-bank">Keunggulan Struktur Holding</h3>
+
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-shield-alt fa-2x text-primary-bank mb-2"></i>
+                        <h6>Risiko Terdiversifikasi</h6>
+                        <p class="small">Pengurangan risiko melalui diversifikasi bisnis</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-cogs fa-2x text-primary-bank mb-2"></i>
+                        <h6>Spesialisasi</h6>
+                        <p class="small">Fokus pada kompetensi inti masing-masing unit</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-chart-line fa-2x text-primary-bank mb-2"></i>
+                        <h6>Pertumbuhan</h6>
+                        <p class="small">Fleksibilitas untuk ekspansi dan akuisisi</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="mb-3">
+                        <i class="fas fa-users fa-2x text-primary-bank mb-2"></i>
+                        <h6>Kolaborasi</h6>
+                        <p class="small">Sinergi antar unit bisnis untuk nilai tambah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,34 +1,39 @@
-# Connect User Transactions to Admin Dashboard with Animations
+# Website Restructuring Plan - PT Sun Menara Mandiri Holding Company
 
-## Completed Tasks
-- [x] Analyzed existing code structure for transactions and admin interface
-- [x] Identified localStorage as shared data store between user.html and admin.html
-- [x] Confirmed admin_app.js already polls for updates every 5 seconds
-- [x] Enhanced automatic transaction connection with real-time notifications (notifications now show regardless of active section)
-- [x] Add slide and show animations to admin.html sections (already implemented: slide-in-left, slide-in-right, fade-in)
-- [x] Update admin.html CSS for animation styles (already implemented)
-- [x] Modify showAdminContent function to include animations (already implemented)
-- [x] Test the connection and animations (polling works, animations functional)
+## Tasks to Complete
 
-# Update Register Page to Liquid Glass Design
+### 1. Update index.html
+- [x] Restructure homepage to present PT Sun Menara Mandiri as holding company
+- [x] Add sections for both holding company and PT TIGA BINTANG MAHAWIRA subsidiary
+- [x] Update hero section and company description
+- [x] Add group overview section
 
-## Completed Tasks
-- [x] Update register.html HTML structure to match liquid glass layout
-- [x] Replace Tailwind CSS with custom liquid glass styles
-- [x] Add liquid background animations and floating shapes
-- [x] Implement glass card with backdrop blur effects
-- [x] Update form styling with glass inputs and buttons
-- [x] Add liquid shine and morphing animations
-- [x] Test responsive design and form functionality
+### 2. Update about.html
+- [ ] Add comprehensive information about PT TIGA BINTANG MAHAWIRA
+- [ ] Include subsidiary business focus and relationship to holding company
+- [ ] Update company history to reflect holding structure
+- [ ] Modify organizational structure section
 
-# Update Login Page with Role-Specific Liquid Glass Design
+### 3. Create group-structure.html
+- [ ] New page showing corporate structure
+- [ ] Visual representation of holding company and subsidiaries
+- [ ] Include PT Sun Menara Mandiri and PT TIGA BINTANG MAHAWIRA
+- [ ] Add navigation and consistent styling
 
-## Completed Tasks
-- [x] Complete login.html HTML structure with role switching
-- [x] Add role-specific CSS styling for admin and user
-- [x] Implement role indicator and dynamic header colors
-- [x] Add role switching functionality with visual feedback
-- [x] Update login button styling based on selected role
-- [x] Implement login API call with role parameter
-- [x] Add loading overlay and error handling
-- [x] Test role switching and login functionality
+### 4. Create business-portfolio.html
+- [ ] New page detailing business portfolio of entire group
+- [ ] Include financial services, property development, and subsidiary businesses
+- [ ] Add portfolio sections for each business line
+- [ ] Include PT TIGA BINTANG MAHAWIRA business focus
+
+### 5. Update Navigation
+- [ ] Add links to new pages (Group Structure, Business Portfolio)
+- [ ] Restructure menu to reflect corporate hierarchy
+- [ ] Update navigation across all existing pages
+- [ ] Ensure consistent navigation styling
+
+### 6. Testing and Validation
+- [ ] Test all new pages and links
+- [ ] Ensure responsive design consistency
+- [ ] Verify content accuracy
+- [ ] Check cross-browser compatibility
